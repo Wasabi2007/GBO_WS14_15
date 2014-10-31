@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -8,26 +9,89 @@
 
 <AnchorPane minHeight="320.0" minWidth="200.0" prefHeight="320.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
    <children>
-      <Button layoutX="10.0" layoutY="41.0" mnemonicParsing="false" onAction="#clearField" prefHeight="25.0" prefWidth="85.0" text="CLEAR" />
-      <Button layoutX="103.0" layoutY="41.0" mnemonicParsing="false" onAction="#deleteChar" prefHeight="25.0" prefWidth="85.0" text="DELETE" />
-      <Button alignment="CENTER" layoutX="10.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="." textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="56.0" layoutY="75.0" mnemonicParsing="false" onAction="#eval" prefHeight="38.0" prefWidth="38.0" text="=" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="103.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="(" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="150.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text=")" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="151.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="+" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="104.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="9" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="57.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="8" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="11.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="7" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="151.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="-" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="104.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="6" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="57.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="5" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="11.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="4" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="151.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="*" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="104.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="3" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="57.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="2" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="11.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="1" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="151.0" layoutY="258.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="/" textAlignment="CENTER" />
-      <Button alignment="CENTER" layoutX="11.0" layoutY="258.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="132.0" text="0" textAlignment="CENTER" />
-      <TextField fx:id="outputField" editable="false" layoutX="11.0" layoutY="14.0" prefHeight="25.0" prefWidth="179.0" />
+      <Button layoutX="10.0" layoutY="41.0" mnemonicParsing="false" onAction="#clearField" prefHeight="25.0" prefWidth="85.0" text="CLEAR">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button layoutX="103.0" layoutY="41.0" mnemonicParsing="false" onAction="#deleteChar" prefHeight="25.0" prefWidth="85.0" text="DELETE">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="10.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="." textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="56.0" layoutY="75.0" mnemonicParsing="false" onAction="#eval" prefHeight="38.0" prefWidth="38.0" text="=" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="103.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="(" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="150.0" layoutY="75.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text=")" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="151.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="104.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="9" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="57.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="8" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="11.0" layoutY="121.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="7" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="151.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="104.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="6" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="57.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="5" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="11.0" layoutY="166.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="4" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="151.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="*" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="104.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="3" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="57.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="2" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="11.0" layoutY="212.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="151.0" layoutY="258.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="38.0" text="/" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="11.0" layoutY="258.0" mnemonicParsing="false" onAction="#addChar" prefHeight="38.0" prefWidth="132.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="12.0" />
+         </font></Button>
+      <TextField fx:id="outputField" editable="false" layoutX="11.0" layoutY="14.0" prefHeight="25.0" prefWidth="179.0">
+         <font>
+            <Font size="12.0" />
+         </font></TextField>
    </children>
 </AnchorPane>
