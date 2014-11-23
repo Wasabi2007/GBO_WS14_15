@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="277.0" prefWidth="1820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ComboBox fx:id="countryComp" onAction="#changeCountry" prefHeight="51.0" prefWidth="453.0" promptText="Keine Länder" />
+      <CheckBox fx:id="presion" mnemonicParsing="false" onAction="#setPresion" text="exakte Angaben" GridPane.rowIndex="1" />
+      <Label text="Land:" GridPane.rowIndex="2" />
+      <Label text="Hauptstadt:" GridPane.rowIndex="3" />
+      <Label text="Einwohner:" GridPane.rowIndex="4" />
+      <Label text="Fläche (in qkm):" GridPane.rowIndex="5" />
+      <Label text="Bevölkerungsdichte (in Personen pto qkm):" GridPane.rowIndex="6" />
+      <Label fx:id="country" text="Default" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="capital" text="Default" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="population" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="size" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="populationPerKm" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="countryTF" promptText="Land" GridPane.rowIndex="7" />
+      <TextField fx:id="capitalTF" promptText="Hauptstadt" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="populationTF" promptText="Einwohner" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <TextField fx:id="arearTF" promptText="Fläche" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Button mnemonicParsing="false" onAction="#addCountry" text="Hinzufügen" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+      <Button mnemonicParsing="false" onAction="#deleteCountry" text="Löschen" GridPane.hgrow="ALWAYS" GridPane.rowIndex="8" />
+   </children>
+</GridPane>

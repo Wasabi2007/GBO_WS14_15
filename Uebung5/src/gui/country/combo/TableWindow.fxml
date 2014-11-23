@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefWidth="1820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <CheckBox fx:id="presion" mnemonicParsing="false" onAction="#setPresion" text="exakte Angaben" GridPane.rowIndex="1" />
+      <TextField fx:id="countryTF" promptText="Land" GridPane.rowIndex="3" />
+      <TextField fx:id="capitalTF" promptText="Hauptstadt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="populationTF" promptText="Einwohner" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="arearTF" promptText="Fläche" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#addCountry" text="Hinzufügen" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#deleteCountry" text="Löschen" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+      <TableView fx:id="tableCountry" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="countryCol" prefWidth="75.0" text="Land" />
+          <TableColumn fx:id="capitalCol" prefWidth="177.0" text="Hauptstadt" />
+            <TableColumn fx:id="populationCol" prefWidth="75.0" text="Einwohner" />
+            <TableColumn fx:id="arearCol" prefWidth="75.0" text="Fläche" />
+            <TableColumn fx:id="popPerkmCol" prefWidth="75.0" text="Dichte" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</GridPane>
