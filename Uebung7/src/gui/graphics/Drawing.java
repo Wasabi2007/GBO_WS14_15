@@ -6,7 +6,6 @@ import javafx.beans.value.ObservableValue;
 import javafx.scene.Scene;
 import javafx.scene.canvas.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -87,7 +86,6 @@ public class Drawing extends Application
         
         Button loeschen = new Button("Löschen");
         loeschen.setOnAction(e -> {
-                gc.clip();
                 gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
         });
         hb.getChildren().add(loeschen);
