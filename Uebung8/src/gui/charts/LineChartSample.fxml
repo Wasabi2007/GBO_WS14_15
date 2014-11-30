@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.charts.LineChartSampleController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="kontoTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="weekColum" prefWidth="105.0" text="Woche" />
+          <TableColumn fx:id="balanceColum" prefWidth="94.0" text="Kontostand" />
+        </columns>
+      </TableView>
+      <LineChart fx:id="chart" title="Kontostände 20XX" GridPane.columnIndex="1">
+        <xAxis>
+          <NumberAxis label="Woche" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Kontostand" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+         <children>
+            <Label text="Woche:" />
+            <TextField fx:id="weekTextfield" />
+            <Label text="Kontostand:" />
+            <TextField fx:id="balanceTextfield" />
+            <Button mnemonicParsing="false" onAction="#addChange" text="Hinzufügen/Ändern" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#delete" text="Löschen" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
